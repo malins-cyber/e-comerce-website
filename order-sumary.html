@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/swiper.min.css" />
+    <link rel="stylesheet" href="./boxicons/css/boxicons.min.css" />
+    <title>order summary page</title>
+  </head>
+  <body>
+    <header class="header prod_header">
+      <nav class="navbar width">
+        <span class="logo">
+          <a href="./index.html" class="logo_img">SHOPPIE</a></span
+        >
+        <ul class="navlist">
+          <li class="links"><a href="./index.html" class="list_links">home</a></li>
+          <li class="links">
+            <a href="./shop.html" class="list_links">shop</a>
+          </li>
+          <li class="links">
+            <a href="#support" class="list_links">contacts</a>
+          </li>
+          <li class="links">
+            <a href="#about_us" class="list_links">about</a>
+          </li>
+        </ul>
+
+        <div class="basket_container">
+          <span class="basket">
+            <a href="#"> <i class="icon bx bx-search"></i></a
+          ></span>
+          <span class="search">
+            <a href="#"> <i class="icon bx bx-basket"></i></a
+          ></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="summary_container width">
+      <div class="product_container">
+        <h4 class="item_review">item review and shipping</h4>
+        <div class="item_details">
+          <div class="item_cover">
+            <img src="./images/image-2.png" alt="" />
+          </div>
+          <div class="item_list">
+            <h4 class="item_name">black pods promax</h4>
+            <p class="color">color: black</p>
+          </div>
+          <div class="pricing">
+            <h4 class="prod_price">K500.00</h4>
+            <p class="quantities">Quantity: 01</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="product_summary">
+        <div class="delivery_header">
+          <h4 class="delivery_info">delivery information</h4>
+          <button class="save_info">save information</button>
+        </div>
+        <div class="delivery_form">
+          <form class="delivery_details">
+            <div class="form_groups">
+              <div class="form_group">
+                <label for="Fname">first name<sup>*</sup></label>
+                <input
+                  type="text"
+                  placeholder="first name"
+                  class="form_control"
+                  required
+                />
+              </div>
+              <div class="form_group margin_left">
+                <label for="Lname">last name<sup>*</sup></label>
+                <input
+                  type="text"
+                  placeholder="last name"
+                  class="form_control"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form_group">
+              <label for="address">address<sup>*</sup></label>
+              <input
+                type="text"
+                placeholder="last name"
+                class="form_control"
+                required
+              />
+            </div>
+
+            <div class="form_groups">
+              <div class="form_group">
+                <label for="cityTown">city/town<sup>*</sup></label>
+                <input
+                  type="text"
+                  placeholder="city town"
+                  class="form_control"
+                  required
+                />
+              </div>
+              <div class="form_group margin_left zip_code">
+                <label for="zipCode">zip code<sup>*</sup></label>
+                <input
+                  type="text"
+                  placeholder="zip code"
+                  class="form_control"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form_groups">
+              <div class="form_group">
+                <label for="mobile">mobile<sup>*</sup></label>
+                <input
+                  type="tel"
+                  placeholder="mobile number"
+                  class="form_control"
+                  required
+                />
+              </div>
+              <div class="form_group margin_left">
+                <label for="email">email<sup>*</sup></label>
+                <input
+                  type="email"
+                  placeholder="email"
+                  class="form_control"
+                  required
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="product_billings">
+        <h4>order summary</h4>
+        <form class="coupon_form">
+          <input
+            type="text"
+            placeholder="enter coupon code"
+            class="coupon_control"
+          />
+          <button class="coupon_button">apply coupon</button>
+        </form>
+
+        <div class="payment_information">
+          <h4>payment information</h4>
+          <form class="payment_checkbox">
+            <div class="checkbox_group">
+              <input type="radio" class="checkbox_wrapper" />
+              <label for="cash">cash on delivery</label>
+            </div>
+
+            <div class="checkbox_group">
+              <input type="radio" class="checkbox_wrapper" />
+              <label for="momo">mobile money</label>
+            </div>
+
+            <div class="checkbox_group">
+              <input type="radio" class="checkbox_wrapper" />
+              <label for="cash">debit or credit card</label>
+            </div>
+
+            <div class="card_details">
+              <label for="email">email <sup>*</sup></label>
+              <input
+                type="email"
+                placeholder="email"
+                class="form_control"
+                required
+              />
+
+              <label for="cardHolder">card name <sup>*</sup></label>
+              <input
+                type="text"
+                placeholder="card holder name"
+                class="form_control"
+                required
+              />
+
+              <label for="cardNumber">card number <sup>*</sup></label>
+              <input
+                type="number"
+                placeholder="0000*******1234"
+                class="form_control"
+                required
+              />
+
+              <div class="expiry_details">
+                <div class="expiry_date">
+                  <label for="expiry">expiry</label>
+                  <input type="date" class="form_control" required />
+                </div>
+                <div class="expiry_date exp_code">
+                  <label for="cvcCode">CVC</label>
+                  <input type="text" placeholder="cvc code" class="form_control cvc_code" required />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="summary">
+          <table>
+            <tr>
+              <td>sub total</td>
+              <td>K500.00</td>
+            </tr>
+            <tr>
+              <td>tax(10%)</td>
+              <td>K50.00</td>
+            </tr>
+            <tr>
+              <td>coupon discount</td>
+              <td>K0.0</td>
+            </tr>
+            <tr>
+              <td>shipping cost</td>
+              <td>K250.00</td>
+            </tr>
+            <tr>
+              <td><strong>total</strong></td>
+              <td> <strong>K800</strong></td>
+            </tr>
+          </table>
+          <button class="checkout_btn">pay K800</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter_section width">
+      <div class="information_container">
+        <h5>ready to get our new stuff?</h5>
+
+        <form class="newsletter_form">
+          <input type="text" placeholder="your email" class="input_control" />
+          <button class="submit_btn">send</button>
+        </form>
+      </div>
+
+      <div class="newsletter_details">
+        <h4>
+          Subscribe to our newsletter to recieve updates made just for you when
+          new products arrive.
+        </h4>
+      </div>
+    </section>
+
+    <footer class="footer_container">
+      <div class="footer_content width">
+        <div class="about_us" id="about_us">
+          <h3>about us</h3>
+          <p class="about">
+            we are a small electronics company that focuses on the selling you
+            the best of house hold as well personal entertainment systems
+          </p>
+        </div>
+
+        <div class="support" id="support">
+          <h3>contact us</h3>
+          <p>TEL: +123 456 7890</p>
+          <p>TEL: +123 456 7890</p>
+        </div>
+
+        <div class="social_media">
+          <h3>our socials</h3>
+          <div class="social_links">
+            <span class="media">
+              <a href="#" class="media_link"> facebook </a>
+            </span>
+            <span class="media">
+              <a href="#" class="media_link"> instagram </a>
+            </span>
+            <span class="media">
+              <a href="#" class="media_link"> linkdin </a>
+            </span>
+            <span class="media">
+              <a href="#" class="media_link"> twitter </a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="privacy_container width">
+        <div class="privacy_wrapper">
+          <div class="copyright">
+            <p>copyright@2024 shoppie.com. all right rights reserved</p>
+          </div>
+
+          <div class="terms">
+            <p>terms of service</p>
+            <p>privacy policy</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./scripts/swiper.js"></script>
+    <script src="./scripts/slider.js"></script>
+  </body>
+</html>
