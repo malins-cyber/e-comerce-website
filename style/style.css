@@ -87,6 +87,7 @@ button {
 }
 
 .logo_img {
+  text-transform: uppercase;
   font-weight: bold;
   color: #000;
 }
